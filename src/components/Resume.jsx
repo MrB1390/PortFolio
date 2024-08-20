@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { Document, Page, pdfjs } from 'react-pdf';
 import avata from '../assets/avatar.svg'
-import resume from '../assets/BALASIVAM RESUME IT.pdf';
+import resume from '../assets/BalasivamCResume (1).pdf';
 import './css/resume.css';
 
 // Configure pdfjs worker
@@ -41,8 +41,8 @@ const Resume = () => {
             <br />
             <div className='d-flex justify-content-center'>
                 <button className='but'>
-                    <a href={resume} style={{ textDecoration: 'none', color: "white", padding: "10px", borderRadius: "5px" }} download="Balasivam's_Resume.pdf">
-                        Download Resume
+                    <a href={resume} style={{ textDecoration: 'none', color: "white", padding: "10px", borderRadius: "5px" }} target="_blank"  rel="noopener noreferrer">
+                        CheckOut
                     </a>
                 </button>
             </div>

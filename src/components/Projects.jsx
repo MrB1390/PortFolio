@@ -11,6 +11,7 @@ const Projects = () => {
       Description:
         "This Project focuses on store the details of the Employees such as Date of Joining, Position etc. using React.js",
       link: "https://graceful-sunshine-de3180.netlify.app/",
+      github:"https://github.com/MrB1390/Employee-Management"
     },
     {
       id: 2,
@@ -20,6 +21,7 @@ const Projects = () => {
       Description:
         "This project focuses on implementing user authentication using React.js for the frontend and Node.js for the backend. Key features include user registration, login, and password reset functionality.",
       link: "https://cosmic-nougat-7d04d1.netlify.app/",
+      github:"https://github.com/MrB1390/Authentication"
     },
     {
       id: 3,
@@ -29,6 +31,7 @@ const Projects = () => {
       Description:
         "This project integrates user authentication and URL conversion functionalities using React.js for the frontend and Node.js for the backend. The key features of this project include user registration, login, password reset, and URL conversion.",
       link: "https://prismatic-cassata-773ca5.netlify.app/",
+      github:"https://github.com/MrB1390/Url-Converter"
     },
     {
       id: 4,
@@ -38,6 +41,7 @@ const Projects = () => {
       Description:
         "This is a Order Management Application built using React.js for the frontend and Node.js for the backend.The key feautures of this project include authorization for admin and users, login, user registrarion, password reset and placing the order .",
       link: "https://order-management-3405.netlify.app/",
+      github:"https://github.com/MrB1390/Order-Mangement"
     },
   ];
   return (
@@ -68,14 +72,26 @@ const Projects = () => {
                         <div class="card-body">
                           <h5 class="card-title">{item.title}</h5>
                           <p class="card-text">{item.Description}</p>
+                          <div style={{display:"flex",justifyContent:"space-between"}}>
                           <Link
                             to={item.link}
                             className="btn btn-primary"
+                            style={{width:"170px"}}
                             target="_blank"
                             rel="noopener noreferrer"
                           >
                             Visit Project
                           </Link>
+                          <Link
+                            to={item.github}
+                            className="btn btn-primary"
+                            style={{width:"170px"}}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Github
+                          </Link>
+                          </div>
                         </div>
                       </div>
                     </div>
