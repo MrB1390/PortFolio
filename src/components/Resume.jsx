@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 // import { Document, Page, pdfjs } from 'react-pdf';
 import avata from '../assets/avatar.svg'
-import resume from '../assets/BalasivamCResume (1).pdf';
+import resume from '../assets/Balasivam C.pdf';
 import './css/resume.css';
 
 // Configure pdfjs worker
